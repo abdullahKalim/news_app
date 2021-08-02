@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    android:id="@+id/news"
+    android:enabled="true"
+    android:title="News"
+    android:icon="@drawable/ic_news"/>
+    <item
+        android:id="@+id/Starrednews"
+        android:enabled="true"
+        android:title="Starred News"
+        android:icon="@drawable/ic_star"/>
+
+    <item
+        android:id="@+id/notes"
+        android:enabled="true"
+        android:title="My Notes"
+        android:icon="@drawable/ic_notes"/>
+    <item
+        android:id="@+id/about"
+        android:enabled="true"
+        android:title="About"
+        android:icon="@drawable/ic_about"/>
+
+</menu>

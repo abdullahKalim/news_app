@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".TextEditorFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008aa3"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:id="@+id/sizeSpin"
+                android:background="@color/white"
+                android:spinnerMode="dialog"/>
+           <Spinner
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+               android:layout_marginTop="11dp"
+                android:id="@+id/fontSpin"
+               android:background="@color/white"
+                android:layout_toEndOf="@+id/sizeSpin"
+                android:spinnerMode="dialog"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="Color"
+                android:textSize="10sp"
+                android:padding="0dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/white"
+                android:id="@+id/colorButton"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+<androidx.recyclerview.widget.RecyclerView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/clear"
+    android:background="#a8d3e0"
+android:id="@+id/editActionList"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/custom_edit"
+        android:id="@+id/editor"
+        android:gravity="top"
+        android:inputType="textMultiLine|textCapSentences|textAutoCorrect"/>
+
+
+
+    </LinearLayout>
